@@ -1,16 +1,28 @@
 import {createBrowserRouter} from 'react-router-dom';
-import SignIn from './views/SignIn';
-import SignUp from './views/SignUp';
+import GuestLayout from './layouts/GuestLayout.jsx';
+import SignIn from './views/SignIn.jsx'
+import SignUp from './views/SignUp.jsx'
+import Users from './views/Users.jsx'
 
 const router = createBrowserRouter([
         {
-            path: '/sign-in',
-            element: <SignIn/>
+            path : '/',
+            element : <GuestLayout />,
+            children : [
+                {
+                    path: '/sign-in',
+                    element: <SignIn />
+                },
+                {
+                    path: '/sign-up',
+                    element: <SignUp />
+                }
+            ]
         },
         {
-            path: '/sign-up',
-            element: <SignUp/>
-        }
+            path: '/users',
+            element: <Users />
+        },
 ]);
 
 export default router;
