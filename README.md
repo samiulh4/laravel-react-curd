@@ -1,8 +1,15 @@
-https://www.youtube.com/watch?v=LxgdcUSFUXA
+# Laravel And React CRUD
 
-PHP = 8.2
+PHP      = 8.2
 Composer = 2.6.6
+Node     = 22
+laravel  = 10.3
 
-Node : 22
+# Project Source (Laravel + React.js Full Stack CRUD and Authentication Project)
 
-laravel 10.3
+`https://www.youtube.com/watch?v=LxgdcUSFUXA`
+
+
+
+
+
